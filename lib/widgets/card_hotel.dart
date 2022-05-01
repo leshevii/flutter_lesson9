@@ -93,6 +93,14 @@ class CardHotel extends StatelessWidget {
                               Expanded(
                                 flex: 2,
                                 child: GestureDetector(
+                                  onTap: () {
+                                    Navigator.of(context).push(
+                                      MaterialPageRoute(
+                                        builder: (context) =>
+                                            InfoView(hotel: hotelPreview),
+                                      ),
+                                    );
+                                  },
                                   child: Container(
                                     width: double.infinity,
                                     color: Colors.blue,
